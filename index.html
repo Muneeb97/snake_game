@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Snaakkeee</title>
+</head>
+<style>
+    body{
+       background: url('back_gig.gif') no-repeat;
+       background-size: cover; 
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col col-9">
+                <input type="text" id="speed" style="margin-left: 15px; margin-top: 5px;">Speed
+                <button id="speed_cntrl" style="margin-left: 15px;">Start</button>
+                <button id="restart" style="margin-left: 15px; margin-bottom: 5px;">Restart</button>
+                <canvas id="canvas" width="608" height="608"></canvas>
+            </div>
+            <div class="col col-3" style="background-color: rgb(191, 166, 214);">
+                <br>
+                <h4>Instructions: </h4>
+                <p>1)First select speed, the larger the value, the slower the speed</p>
+                <p>2)Press Start button and the game will open and press any key to move</p>
+                <p>3)For every 10 points, a bonus bug will be seen which will give 5 points</p>
+                <p>Arrow Keys : Up, Down, Left, Right</p>
+                <h3 id="gameover"></h3>
+            </div>
+        </div>
+    </div>
+        
+        
+    
+    <script src="script.js"></script>
+</body>
+</html>
